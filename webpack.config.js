@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const SRC_DIR = path.join(__dirname, '/src');
 const DIST_DIR = path.join(__dirname, '/dist');
@@ -30,9 +29,9 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.s[ac]ss$/i,
+				test: /\.(css|s[ac]ss)$/i,
 				use: [
-					MiniCssExtractPlugin.loader,
+					'style-loader',
 					{
 						loader: 'css-loader',
 						options: {

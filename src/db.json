@@ -1,0 +1,19 @@
+{
+	"articles": [
+	  {
+		"id": "0",
+		"title": "Build your own React",
+		"description": "We are going to rewrite React from scratch. Step by step. Following the architecture from the real React code but without all the optimizations and non-essential features.",
+		"url": "https://pomb.us/build-your-own-react/"
+	  },
+	  {
+		"id": "1",
+		"title": "Mobile-First CSS: Is It Time for a Rethink?",
+		"description": "The mobile-first design methodology is great—it focuses on what really matters to the user, it’s well-practiced, and it’s been a common design pattern for years. So developing your CSS mobile-first should also be great, too…right?",
+		"url": "https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/"
+	  }
+	],
+	"videos": [],
+	"books": []
+  }
+  
