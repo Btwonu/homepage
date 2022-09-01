@@ -67,7 +67,7 @@ export default function App() {
 									color="#93f458"
 									cssOverride={{
 										display: 'block',
-										margin: '15px auto 0 auto',
+										margin: '50px auto 0 auto',
 									}}
 								/>
 							}
