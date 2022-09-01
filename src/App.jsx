@@ -10,41 +10,49 @@ import SlickSlider from './components/SlickSlider';
 import Card from './components/Card';
 import Section from './components/Section';
 import Shell from './components/Shell';
+import Grid from './components/Grid';
+import GridItem from './components/GridItem';
+import Wrapper from './components/Wrapper';
 
 const generateItems = () => Array.from({ length: 20 });
 
 export default function App() {
-	const [articles, setArticles] = useState(db.articles);
+	const [articles, setArticles] = useState(db.articles.slice(0, 2));
 	const [items, setItems] = useState(generateItems());
+	const [i, setI] = useState(2);
 
-	const cardList = db.articles.map((article) => (
-		<Card
-			key={Number(article.id)}
-			id={Number(article.id)}
-			title={article.title}
-			description={article.description}
-			url={article.url}
-		/>
+	console.log({ articles });
+
+	const cardList = articles.map((article) => (
+		<GridItem key={Number(article.id)} xs={4}>
+			<Card
+				id={Number(article.id)}
+				title={article.title}
+				description={article.description}
+				url={article.url}
+			/>
+		</GridItem>
 	));
+
+	console.log({ cardList });
 
 	const getArticles = () => {
 		setTimeout(() => {
-			const additionalArticles = [
-				{
-					id: '3',
-					title: 'Something new',
-					description: 'Placeholder text',
-					url: 'https://pomb.us/build-your-own-react/',
-				},
-				{
-					id: '4',
-					title: 'Some other article',
-					description: 'Something else else other',
-					url: 'https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/',
-				},
-			];
+			console.log(i);
 
-			setArticles((prevState) => [...prevState, ...additionalArticles]);
+			const newArticle = db.articles[i];
+
+			if (!newArticle) {
+				return setArticles(articles);
+			}
+
+			setI((prevI) => prevI + 1);
+
+			console.log({ newArticle });
+
+			const updatedArticles = [...articles, newArticle];
+
+			setArticles(updatedArticles);
 		}, 1500);
 	};
 
@@ -57,25 +65,27 @@ export default function App() {
 
 	return (
 		<div className="App">
-			<Shell>
+			<Wrapper>
 				<Section>
-					<SlickSlider>{cardList && cardList}</SlickSlider>
+					<Shell>
+						<SlickSlider>{cardList && cardList}</SlickSlider>
+					</Shell>
 				</Section>
 
 				<Section>
-					<InfiniteScroll
-						dataLength={items.length}
-						next={getItems}
-						hasMore
-						loader={<h4>Loading...</h4>}
-					>
-						{items &&
-							items.map((item, index) => (
-								<div key={index}>{index}</div>
-							))}
-					</InfiniteScroll>
+					<Shell>
+						<InfiniteScroll
+							style={{ overflow: 'visible' }}
+							dataLength={articles.length}
+							next={getArticles}
+							hasMore={db.articles[i] !== undefined}
+							loader={<h4>Loading articles...</h4>}
+						>
+							<Grid xs={3}>{cardList && cardList}</Grid>
+						</InfiniteScroll>
+					</Shell>
 				</Section>
-			</Shell>
+			</Wrapper>
 		</div>
 	);
 }

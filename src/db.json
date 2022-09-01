@@ -1,16 +1,34 @@
 {
 	"articles": [
 		{
-			"id": "0",
+			"id": 0,
 			"title": "Build your own React",
 			"description": "We are going to rewrite React from scratch. Step by step. Following the architecture from the real React code but without all the optimizations and non-essential features.",
 			"url": "https://pomb.us/build-your-own-react/"
 		},
 		{
-			"id": "1",
+			"id": 1,
 			"title": "Mobile-First CSS: Is It Time for a Rethink?",
 			"description": "The mobile-first design methodology is great—it focuses on what really matters to the user, it’s well-practiced, and it’s been a common design pattern for years. So developing your CSS mobile-first should also be great, too…right?",
 			"url": "https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/"
+		},
+		{
+			"id": 3,
+			"title": "You Need a CMS: The Case for WordPress",
+			"description": "Before we dive into the merits of WordPress specifically, let’s start with why it is practically a requirement to use a Content Management System for your marketing site. We often get asked why the marketing site can’t live on the same platform as the product/app site, and why it can’t be managed by the same folks who build and maintain those systems.",
+			"url": "https://www.krisroadruck.com/blog/you-need-a-cms/"
+		},
+		{
+			"id": 4,
+			"title": "Responsible JavaScript: Part I",
+			"description": "By the numbers, JavaScript is a performance liability. If the trend persists, the median page will be shipping at least 400 KB of it before too long, and that’s merely what’s transferred. Like other text-based resources, JavaScript is almost always served compressed—but that might be the only thing we’re getting consistently right in its delivery.",
+			"url": "https://alistapart.com/article/responsible-javascript-part-1/"
+		},
+		{
+			"id": 5,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
 		}
 	],
 	"videos": [],
