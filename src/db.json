@@ -13,19 +13,79 @@
 			"url": "https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/"
 		},
 		{
-			"id": 3,
+			"id": 2,
 			"title": "You Need a CMS: The Case for WordPress",
 			"description": "Before we dive into the merits of WordPress specifically, let’s start with why it is practically a requirement to use a Content Management System for your marketing site. We often get asked why the marketing site can’t live on the same platform as the product/app site, and why it can’t be managed by the same folks who build and maintain those systems.",
 			"url": "https://www.krisroadruck.com/blog/you-need-a-cms/"
 		},
 		{
-			"id": 4,
+			"id": 3,
 			"title": "Responsible JavaScript: Part I",
 			"description": "By the numbers, JavaScript is a performance liability. If the trend persists, the median page will be shipping at least 400 KB of it before too long, and that’s merely what’s transferred. Like other text-based resources, JavaScript is almost always served compressed—but that might be the only thing we’re getting consistently right in its delivery.",
 			"url": "https://alistapart.com/article/responsible-javascript-part-1/"
 		},
 		{
+			"id": 4,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
 			"id": 5,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 6,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 7,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 8,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 9,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 10,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 11,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 12,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 13,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
+		},
+		{
+			"id": 14,
 			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
 			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
 			"url": "https://www.sitepoint.com/typescript-vs-javascript/"

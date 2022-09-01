@@ -14,14 +14,10 @@ import Grid from './components/Grid';
 import GridItem from './components/GridItem';
 import Wrapper from './components/Wrapper';
 
-const generateItems = () => Array.from({ length: 20 });
-
 export default function App() {
-	const [articles, setArticles] = useState(db.articles.slice(0, 2));
-	const [items, setItems] = useState(generateItems());
-	const [i, setI] = useState(2);
-
-	console.log({ articles });
+	const STEP = 3;
+	const [index, setIndex] = useState(STEP);
+	const [articles, setArticles] = useState(db.articles.slice(0, STEP));
 
 	const cardList = articles.map((article) => (
 		<GridItem key={Number(article.id)} xs={4}>
@@ -34,32 +30,14 @@ export default function App() {
 		</GridItem>
 	));
 
-	console.log({ cardList });
-
 	const getArticles = () => {
 		setTimeout(() => {
-			console.log(i);
+			const newArticles = db.articles.slice(index, index + STEP);
+			const updatedArticles = [...articles, ...newArticles];
 
-			const newArticle = db.articles[i];
+			setIndex((prevIndex) => prevIndex + STEP);
 
-			if (!newArticle) {
-				return setArticles(articles);
-			}
-
-			setI((prevI) => prevI + 1);
-
-			console.log({ newArticle });
-
-			const updatedArticles = [...articles, newArticle];
-
-			setArticles(updatedArticles);
-		}, 1500);
-	};
-
-	const getItems = () => {
-		setTimeout(() => {
-			const newItems = items.concat(generateItems());
-			setItems(newItems);
+			return setArticles(updatedArticles);
 		}, 1500);
 	};
 
@@ -78,10 +56,10 @@ export default function App() {
 							style={{ overflow: 'visible' }}
 							dataLength={articles.length}
 							next={getArticles}
-							hasMore={db.articles[i] !== undefined}
+							hasMore={db.articles[index] !== undefined}
 							loader={<h4>Loading articles...</h4>}
 						>
-							<Grid xs={3}>{cardList && cardList}</Grid>
+							<Grid>{cardList && cardList}</Grid>
 						</InfiniteScroll>
 					</Shell>
 				</Section>
