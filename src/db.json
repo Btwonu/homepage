@@ -91,6 +91,32 @@
 			"url": "https://www.sitepoint.com/typescript-vs-javascript/"
 		}
 	],
-	"videos": [],
+	"videos": [
+		{
+			"id": 0,
+			"title": "Blazor in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=QXxNlpjnulI"
+		},
+		{
+			"id": 1,
+			"title": "Brainf**k in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=hdHjjBS4cs8"
+		},
+		{
+			"id": 2,
+			"title": "VS Code Top-Ten Pro Tips",
+			"url": "https://www.youtube.com/watch?v=u21W_tfPVrY"
+		},
+		{
+			"id": 3,
+			"title": "Build a Mindblowing 3D Portfolio Website",
+			"url": "https://www.youtube.com/watch?v=Q7AOvWpIVHU"
+		},
+		{
+			"id": 4,
+			"title": "Web Assembly (WASM) in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=cbB3QEwWMlA"
+		}
+	],
 	"books": []
 }

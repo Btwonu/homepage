@@ -5,11 +5,11 @@ import styled from 'styled-components';
 const StyledCard = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	height: 100%;
 	box-shadow: 0 0 2px 2px #93f45888;
 	padding: 60px 55px;
 	border-radius: 2px;
+	font-weight: 500;
 
 	h2 {
 		margin-bottom: 20px;
@@ -17,7 +17,11 @@ const StyledCard = styled.div`
 
 	a {
 		text-decoration: none;
-		color: #93f458;
+		color: #72bd43;
+	}
+
+	p {
+		color: #395f22;
 	}
 `;
 

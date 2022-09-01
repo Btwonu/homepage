@@ -14,6 +14,7 @@ import Shell from './components/Shell';
 import Grid from './components/Grid';
 import GridItem from './components/GridItem';
 import Wrapper from './components/Wrapper';
+import Video from './components/Video';
 
 export default function App() {
 	const STEP = 3;
@@ -31,6 +32,10 @@ export default function App() {
 		</GridItem>
 	));
 
+	const videoList = db.videos.map((video) => (
+		<Video key={video.id} url={video.url} />
+	));
+
 	const getArticles = () => {
 		setTimeout(() => {
 			const newArticles = db.articles.slice(index, index + STEP);
@@ -46,9 +51,7 @@ export default function App() {
 		<div className="App">
 			<Wrapper>
 				<Section>
-					<Shell>
-						<SlickSlider>{cardList && cardList}</SlickSlider>
-					</Shell>
+					<SlickSlider>{videoList && videoList}</SlickSlider>
 				</Section>
 
 				<Section>
@@ -61,7 +64,7 @@ export default function App() {
 							loader={
 								<GridLoader
 									size={7}
-									color='#93f458'
+									color="#93f458"
 									cssOverride={{
 										display: 'block',
 										margin: '15px auto 0 auto',
