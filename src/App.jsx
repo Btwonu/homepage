@@ -17,7 +17,15 @@ export default function App() {
 	const [articles, setArticles] = useState(db.articles);
 	const [items, setItems] = useState(generateItems());
 
-	const cardList = db.articles.map((article) => <Card key={article.id} {...article} />);
+	const cardList = db.articles.map((article) => (
+		<Card
+			key={Number(article.id)}
+			id={Number(article.id)}
+			title={article.title}
+			description={article.description}
+			url={article.url}
+		/>
+	));
 
 	const getArticles = () => {
 		setTimeout(() => {
@@ -62,7 +70,9 @@ export default function App() {
 						loader={<h4>Loading...</h4>}
 					>
 						{items &&
-							items.map((item, index) => <div key={index}>{index}</div>)}
+							items.map((item, index) => (
+								<div key={index}>{index}</div>
+							))}
 					</InfiniteScroll>
 				</Section>
 			</Shell>
