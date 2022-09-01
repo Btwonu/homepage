@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
 	overflow: hidden;
 
 	.wrapper__inner {
-		padding-top: 200px;
+		/* padding-top: 200px; */
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -18,12 +18,12 @@ const StyledWrapper = styled.div`
 	}
 `;
 
-function Wrapper({children}) {
-	return (<StyledWrapper className="wrapper">
-		<div className="wrapper__inner">
-			{children}
-		</div>
-	</StyledWrapper>);
+function Wrapper({ children }) {
+	return (
+		<StyledWrapper className="wrapper">
+			<div className="wrapper__inner">{children}</div>
+		</StyledWrapper>
+	);
 }
 
 // Wrapper.propTypes

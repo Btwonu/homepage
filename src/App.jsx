@@ -1,6 +1,7 @@
 import './styles.css';
 import React, { useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import GridLoader from 'react-spinners/GridLoader';
 
 // Database
 import db from './db.json';
@@ -57,7 +58,16 @@ export default function App() {
 							dataLength={articles.length}
 							next={getArticles}
 							hasMore={db.articles[index] !== undefined}
-							loader={<h4>Loading articles...</h4>}
+							loader={
+								<GridLoader
+									size={7}
+									color='#93f458'
+									cssOverride={{
+										display: 'block',
+										margin: '15px auto 0 auto',
+									}}
+								/>
+							}
 						>
 							<Grid>{cardList && cardList}</Grid>
 						</InfiniteScroll>

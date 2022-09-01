@@ -7,7 +7,7 @@ const StyledCard = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	box-shadow: 0 0 2px 2px rgba(20, 20, 20, 0.2);
+	box-shadow: 0 0 2px 2px #93f45888;
 	padding: 60px 55px;
 	border-radius: 2px;
 
@@ -17,6 +17,7 @@ const StyledCard = styled.div`
 
 	a {
 		text-decoration: none;
+		color: #93f458;
 	}
 `;
 
