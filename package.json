@@ -8,7 +8,8 @@
 		"build": "webpack --mode production",
 		"test": "jest",
 		"format": "npx prettier **/*.js **/*.jsx **/*.json --write",
-		"lint": "npx eslint **/*.js"
+		"lint": "npx eslint **/*.js **/*.jsx",
+		"lintfix": "eslint --fix --ext .js,.jsx ."
 	},
 	"keywords": [],
 	"author": "Btwonu <btwonu@gmail.com>",
@@ -43,6 +44,9 @@
 	"dependencies": {
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
+		"react-infinite-scroll-component": "^6.1.0",
+		"react-slick": "^0.29.0",
+		"slick-carousel": "^1.8.1",
 		"styled-components": "^5.3.5"
 	},
 	"browserslist": "last 2 versions"

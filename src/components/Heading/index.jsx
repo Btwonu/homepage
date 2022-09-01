@@ -7,12 +7,12 @@ const StyledHeading = styled.div`
 	}
 `;
 
-const Heading = () => {
+function Heading() {
 	return (
 		<StyledHeading>
 			<h1>Heading 1</h1>
 		</StyledHeading>
 	);
-};
+}
 
 export default Heading;
