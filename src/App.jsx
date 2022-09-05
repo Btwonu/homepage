@@ -15,6 +15,7 @@ import Grid from './components/Grid';
 import GridItem from './components/GridItem';
 import Wrapper from './components/Wrapper';
 import Video from './components/Video';
+import Book from './components/Book';
 
 export default function App() {
 	const STEP = 3;
@@ -36,6 +37,10 @@ export default function App() {
 		<Video key={video.id} url={video.url} />
 	));
 
+	const bookList = db.books.map((book) => (
+		<Book key={book.id} title={book.title} description={book.description} />
+	));
+
 	const getArticles = () => {
 		setTimeout(() => {
 			const newArticles = db.articles.slice(index, index + STEP);
@@ -52,6 +57,10 @@ export default function App() {
 			<Wrapper>
 				<Section>
 					<SlickSlider>{videoList && videoList}</SlickSlider>
+				</Section>
+
+				<Section>
+					<Shell>{bookList && bookList}</Shell>
 				</Section>
 
 				<Section>

@@ -118,5 +118,36 @@
 			"url": "https://www.youtube.com/watch?v=cbB3QEwWMlA"
 		}
 	],
-	"books": []
+	"books": [
+		{
+			"id": 0,
+			"title": "Secrets of the JavaScript Ninja",
+			"authors": ["John Resig", "Bear Bibeault"],
+			"rating": 4.2,
+			"description": "Secrets of the JavaScript Ninja uses practical examples to clearly illustrate each core concept and technique. This completely revised edition shows you how to master key JavaScript concepts such as functions, closures, objects, prototypes, and promises. It covers APIs such as the DOM, events, and timers. You’ll discover best practice techniques such as testing, and cross-browser development, all taught from the perspective of skilled JavaScript practitioners.",
+			"pages": 370,
+			"initialPublish": 2008,
+			"tags": ["javascript", "fundamentals", "advanced", "concepts"]
+		},
+		{
+			"id": 1,
+			"title": "CSS Secrets: Better Solutions to Everyday Web Design Problems",
+			"authors": ["Lea Verou"],
+			"rating": 4.56,
+			"description": "Based on two popular talks from author Lea Verou--including \"CSS3 Secrets: 10 things you may not know about CSS\"--this practical guide provides intermediate to advanced CSS developers with more than 40 undocumented techniques and tips for using CSS3 to create better websites.",
+			"pages": 354,
+			"initialPublish": 2014,
+			"tags": ["css", "tips", "advanced"]
+		},
+		{
+			"id": 2,
+			"title": "CSS in Depth",
+			"authors": ["Keith J. Grant"],
+			"rating": 4.51,
+			"description": "CSS in Depth exposes you to a world of CSS techniques that range from clever to mind-blowing. This instantly useful book is packed with creative examples and powerful best practices that will sharpen your technical skills and inspire your sense of design.",
+			"pages": 444,
+			"initialPublish": 2018,
+			"tags": ["css", "fundamentals", "concepts"]
+		}
+	]
 }
