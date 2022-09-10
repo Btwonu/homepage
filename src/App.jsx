@@ -2,8 +2,6 @@ import './styles.css';
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import GridLoader from 'react-spinners/GridLoader';
-import '../lib/loading-bar/dist/loading-bar.min.css';
-import '../lib/loading-bar/dist/loading-bar.min.js';
 
 // Database
 import db from './db.json';
@@ -18,20 +16,12 @@ import GridItem from './components/GridItem';
 import Wrapper from './components/Wrapper';
 import Video from './components/Video';
 import Book from './components/Book';
+import LoadingBar from './components/LoadingBar';
 
 export default function App() {
 	const STEP = 3;
 	const [index, setIndex] = useState(STEP);
 	const [articles, setArticles] = useState(db.articles.slice(0, STEP));
-
-	useEffect(() => {
-		const loadingBar = new ldBar('.myBar', {
-			stroke: 'data:ldbar/res,gradient(0,1,#85ff12,#29fa15, #03ff6c)',
-			'stroke-width': 40,
-			preset: 'line',
-			value: 65,
-		});
-	}, []);
 
 	const articleList = articles.map((article) => (
 		<GridItem key={Number(article.id)} xs={4}>
@@ -72,7 +62,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<Wrapper>
-				<div className="myBar" />
+				<LoadingBar percentage={30} />
 
 				<Section>
 					<SlickSlider>{videoList && videoList}</SlickSlider>
