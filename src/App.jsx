@@ -1,7 +1,9 @@
 import './styles.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import GridLoader from 'react-spinners/GridLoader';
+import '../lib/loading-bar/dist/loading-bar.min.css';
+import '../lib/loading-bar/dist/loading-bar.min.js';
 
 // Database
 import db from './db.json';
@@ -22,23 +24,38 @@ export default function App() {
 	const [index, setIndex] = useState(STEP);
 	const [articles, setArticles] = useState(db.articles.slice(0, STEP));
 
-	const cardList = articles.map((article) => (
+	useEffect(() => {
+		const loadingBar = new ldBar('.myBar', {
+			stroke: 'data:ldbar/res,gradient(0,1,#85ff12,#29fa15, #03ff6c)',
+			'stroke-width': 40,
+			preset: 'line',
+			value: 65,
+		});
+	}, []);
+
+	const articleList = articles.map((article) => (
 		<GridItem key={Number(article.id)} xs={4}>
 			<Card
 				id={Number(article.id)}
 				title={article.title}
 				description={article.description}
 				url={article.url}
+				done={article.done}
 			/>
 		</GridItem>
 	));
 
 	const videoList = db.videos.map((video) => (
-		<Video key={video.id} url={video.url} />
+		<Video key={video.id} url={video.url} done={video.done} />
 	));
 
 	const bookList = db.books.map((book) => (
-		<Book key={book.id} title={book.title} description={book.description} />
+		<Book
+			key={book.id}
+			title={book.title}
+			description={book.description}
+			done={book.done}
+		/>
 	));
 
 	const getArticles = () => {
@@ -55,6 +72,8 @@ export default function App() {
 	return (
 		<div className="App">
 			<Wrapper>
+				<div className="myBar" />
+
 				<Section>
 					<SlickSlider>{videoList && videoList}</SlickSlider>
 				</Section>
@@ -81,7 +100,7 @@ export default function App() {
 								/>
 							}
 						>
-							<Grid>{cardList && cardList}</Grid>
+							<Grid>{articleList && articleList}</Grid>
 						</InfiniteScroll>
 					</Shell>
 				</Section>

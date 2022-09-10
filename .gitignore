@@ -1,3 +1,5 @@
 /node_modules
 /asset-files
 /dist
+/lib/loading-bar/dist/loading-bar.css
+/lib/loading-bar/dist/loading-bar.js

@@ -23,11 +23,15 @@ const StyledCard = styled.div`
 	p {
 		color: #395f22;
 	}
+
+	&.is-done {
+		background: rgba(30, 30, 30, 0.2);
+	}
 `;
 
-function Card({ id, title, description, url }) {
+function Card({ id, title, description, url, done }) {
 	return (
-		<StyledCard>
+		<StyledCard className={done && 'is-done'}>
 			<h2>
 				<a href={url}>{title}</a>
 			</h2>
@@ -43,6 +47,7 @@ Card.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	url: PropTypes.string.isRequired,
+	done: PropTypes.bool.isRequired,
 };
 
 export default Card;
