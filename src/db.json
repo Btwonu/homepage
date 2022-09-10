@@ -33,7 +33,7 @@
 			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
 			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
 			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
-			"done": false
+			"done": true
 		},
 		{
 			"id": 5,
@@ -103,7 +103,7 @@
 			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
 			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
 			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
-			"done": false
+			"done": true
 		}
 	],
 	"videos": [

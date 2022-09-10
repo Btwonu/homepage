@@ -23,6 +23,13 @@ export default function App() {
 	const [index, setIndex] = useState(STEP);
 	const [articles, setArticles] = useState(db.articles.slice(0, STEP));
 
+	const calculateProgressPercentage = () => {
+		const allResources = db.articles.concat(db.books).concat(db.videos);
+		const doneResources = allResources.filter((resource) => resource.done);
+
+		return Math.floor((doneResources.length / allResources.length) * 100);
+	};
+
 	const articleList = articles.map((article) => (
 		<GridItem key={Number(article.id)} xs={4}>
 			<Card
@@ -35,9 +42,11 @@ export default function App() {
 		</GridItem>
 	));
 
-	const videoList = db.videos.map((video) => (
-		<Video key={video.id} url={video.url} done={video.done} />
-	));
+	let videoList;
+
+	// const videoList = db.videos.map((video) => (
+	// 	<Video key={video.id} url={video.url} done={video.done} />
+	// ));
 
 	const bookList = db.books.map((book) => (
 		<Book
@@ -62,7 +71,13 @@ export default function App() {
 	return (
 		<div className="App">
 			<Wrapper>
-				<LoadingBar percentage={30} />
+				<Section>
+					<Shell>
+						<LoadingBar
+							percentage={calculateProgressPercentage()}
+						/>
+					</Shell>
+				</Section>
 
 				<Section>
 					<SlickSlider>{videoList && videoList}</SlickSlider>
