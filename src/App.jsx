@@ -49,12 +49,14 @@ export default function App() {
 	// ));
 
 	const bookList = db.books.map((book) => (
-		<Book
-			key={book.id}
-			title={book.title}
-			description={book.description}
-			done={book.done}
-		/>
+		<GridItem key={Number(book.id)} xs={3}>
+			<Book
+				key={book.id}
+				title={book.title}
+				description={book.description}
+				done={book.done}
+			/>
+		</GridItem>
 	));
 
 	const getArticles = () => {
@@ -84,7 +86,9 @@ export default function App() {
 				</Section>
 
 				<Section>
-					<Shell>{bookList && bookList}</Shell>
+					<Shell>
+						<Grid>{bookList && bookList}</Grid>
+					</Shell>
 				</Section>
 
 				<Section>
