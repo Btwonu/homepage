@@ -1,0 +1,176 @@
+{
+	"articles": [
+		{
+			"id": 0,
+			"title": "Build your own React",
+			"description": "We are going to rewrite React from scratch. Step by step. Following the architecture from the real React code but without all the optimizations and non-essential features.",
+			"url": "https://pomb.us/build-your-own-react/",
+			"done": true
+		},
+		{
+			"id": 1,
+			"title": "Mobile-First CSS: Is It Time for a Rethink?",
+			"description": "The mobile-first design methodology is great—it focuses on what really matters to the user, it’s well-practiced, and it’s been a common design pattern for years. So developing your CSS mobile-first should also be great, too…right?",
+			"url": "https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/",
+			"done": true
+		},
+		{
+			"id": 2,
+			"title": "You Need a CMS: The Case for WordPress",
+			"description": "Before we dive into the merits of WordPress specifically, let’s start with why it is practically a requirement to use a Content Management System for your marketing site. We often get asked why the marketing site can’t live on the same platform as the product/app site, and why it can’t be managed by the same folks who build and maintain those systems.",
+			"url": "https://www.krisroadruck.com/blog/you-need-a-cms/",
+			"done": false
+		},
+		{
+			"id": 3,
+			"title": "Responsible JavaScript: Part I",
+			"description": "By the numbers, JavaScript is a performance liability. If the trend persists, the median page will be shipping at least 400 KB of it before too long, and that’s merely what’s transferred. Like other text-based resources, JavaScript is almost always served compressed—but that might be the only thing we’re getting consistently right in its delivery.",
+			"url": "https://alistapart.com/article/responsible-javascript-part-1/",
+			"done": false
+		},
+		{
+			"id": 4,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": true
+		},
+		{
+			"id": 5,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": true
+		},
+		{
+			"id": 6,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 7,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 8,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 9,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 10,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 11,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 12,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 13,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": false
+		},
+		{
+			"id": 14,
+			"title": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"description": "This article will look at TypeScript vs JavaScript: how they compare, and when to use TypeScript vs JavaScript. We’ll explore what TypeScript actually is, why it exists, and what its advantages and disadvantages are.",
+			"url": "https://www.sitepoint.com/typescript-vs-javascript/",
+			"done": true
+		}
+	],
+	"videos": [
+		{
+			"id": 0,
+			"title": "Blazor in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=QXxNlpjnulI",
+			"done": true
+		},
+		{
+			"id": 1,
+			"title": "Brainf**k in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=hdHjjBS4cs8",
+			"done": true
+		},
+		{
+			"id": 2,
+			"title": "VS Code Top-Ten Pro Tips",
+			"url": "https://www.youtube.com/watch?v=u21W_tfPVrY",
+			"done": false
+		},
+		{
+			"id": 3,
+			"title": "Build a Mindblowing 3D Portfolio Website",
+			"url": "https://www.youtube.com/watch?v=Q7AOvWpIVHU",
+			"done": false
+		},
+		{
+			"id": 4,
+			"title": "Web Assembly (WASM) in 100 Seconds",
+			"url": "https://www.youtube.com/watch?v=cbB3QEwWMlA",
+			"done": false
+		}
+	],
+	"books": [
+		{
+			"id": 0,
+			"title": "Secrets of the JavaScript Ninja",
+			"authors": ["John Resig", "Bear Bibeault"],
+			"rating": 4.2,
+			"description": "Secrets of the JavaScript Ninja uses practical examples to clearly illustrate each core concept and technique. This completely revised edition shows you how to master key JavaScript concepts such as functions, closures, objects, prototypes, and promises. It covers APIs such as the DOM, events, and timers. You’ll discover best practice techniques such as testing, and cross-browser development, all taught from the perspective of skilled JavaScript practitioners.",
+			"pages": 370,
+			"initialPublish": 2008,
+			"tags": ["javascript", "fundamentals", "advanced", "concepts"],
+			"done": true
+		},
+		{
+			"id": 1,
+			"title": "CSS Secrets: Better Solutions to Everyday Web Design Problems",
+			"authors": ["Lea Verou"],
+			"rating": 4.56,
+			"description": "Based on two popular talks from author Lea Verou--including \"CSS3 Secrets: 10 things you may not know about CSS\"--this practical guide provides intermediate to advanced CSS developers with more than 40 undocumented techniques and tips for using CSS3 to create better websites.",
+			"pages": 354,
+			"initialPublish": 2014,
+			"tags": ["css", "tips", "advanced"],
+			"done": false
+		},
+		{
+			"id": 2,
+			"title": "CSS in Depth",
+			"authors": ["Keith J. Grant"],
+			"rating": 4.51,
+			"description": "CSS in Depth exposes you to a world of CSS techniques that range from clever to mind-blowing. This instantly useful book is packed with creative examples and powerful best practices that will sharpen your technical skills and inspire your sense of design.",
+			"pages": 444,
+			"initialPublish": 2018,
+			"tags": ["css", "fundamentals", "concepts"],
+			"done": false
+		}
+	]
+}

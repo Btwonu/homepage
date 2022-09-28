@@ -11,15 +11,23 @@ const StyledBook = styled.div`
 		margin-bottom: 20px;
 	}
 
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 	&.is-done {
 		background: rgba(30, 30, 30, 0.2);
 	}
 `;
 
-function Book({ title, description, done }) {
+function Book({ title, description, done, url }) {
 	return (
 		<StyledBook className={done && 'is-done'}>
-			<h3>{title}</h3>
+			<h3><a href={url}>{title}</a></h3>
+
+			<p>{description}</p>
 		</StyledBook>
 	);
 }
@@ -29,6 +37,7 @@ Book.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	done: PropTypes.bool.isRequired,
+	url: PropTypes.string.isRequired,
 };
 
 export default Book;

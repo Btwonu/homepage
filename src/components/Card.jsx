@@ -8,7 +8,7 @@ const StyledCard = styled.div`
 	flex-direction: column;
 	height: 100%;
 	box-shadow: 0 0 2px 2px #93f45888;
-	padding: 60px 55px;
+	padding: 52px 36px;
 	border-radius: 2px;
 	font-weight: 500;
 	overflow: hidden;
@@ -26,8 +26,12 @@ const StyledCard = styled.div`
 	}
 
 	a {
-		text-decoration: none;
+		position: relative;
 		color: #72bd43;
+		
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	p {

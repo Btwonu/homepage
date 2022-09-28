@@ -42,11 +42,9 @@ export default function App() {
 		</GridItem>
 	));
 
-	let videoList;
-
-	// const videoList = db.videos.map((video) => (
-	// 	<Video key={video.id} url={video.url} done={video.done} />
-	// ));
+	const videoList = db.videos.map((video) => (
+		<Video key={video.id} url={video.url} done={video.done} />
+	));
 
 	const bookList = db.books.map((book) => (
 		<GridItem key={Number(book.id)} xs={3}>
@@ -55,6 +53,7 @@ export default function App() {
 				title={book.title}
 				description={book.description}
 				done={book.done}
+				url={book.url}
 			/>
 		</GridItem>
 	));
